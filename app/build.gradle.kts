@@ -6,7 +6,8 @@ plugins {
 
 android {
     namespace = "com.trupti.movieapplication"
-    compileSdk = 34
+    compileSdk = 35
+
 
     defaultConfig {
         applicationId = "com.trupti.movieapplication"
