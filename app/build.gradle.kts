@@ -76,4 +76,6 @@ dependencies {
 
     implementation("com.squareup.retrofit2:adapter-rxjava3:2.9.0")
 
+    implementation ("com.facebook.shimmer:shimmer:0.5.0")
+
 }

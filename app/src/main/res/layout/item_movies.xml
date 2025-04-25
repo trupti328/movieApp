@@ -6,12 +6,7 @@
     android:layout_height="wrap_content"
     android:background="?android:selectableItemBackground">
 
-    <TextView
-        android:id="@+id/tvMovieId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ID"
-        android:textStyle="bold"/>
+
 
     <TextView
         android:id="@+id/tvMovieName"
