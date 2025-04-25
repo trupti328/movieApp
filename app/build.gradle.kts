@@ -67,4 +67,13 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
 
     implementation ("androidx.appcompat:appcompat:1.6.1")
+
+    implementation("io.insert-koin:koin-android:3.3.3")
+
+    // RxJava3 dependencies
+    implementation("io.reactivex.rxjava3:rxjava:3.1.6")
+    implementation("io.reactivex.rxjava3:rxandroid:3.0.2")
+
+    implementation("com.squareup.retrofit2:adapter-rxjava3:2.9.0")
+
 }

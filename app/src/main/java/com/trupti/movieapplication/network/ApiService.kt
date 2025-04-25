@@ -1,6 +1,7 @@
 package com.trupti.movieapplication.network
 
 import com.trupti.movieapplication.model.MovieResponse
+import com.trupti.movieapplication.model.TvResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
