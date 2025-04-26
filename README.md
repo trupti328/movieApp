@@ -13,6 +13,8 @@ RecyclerView
 
 Intent for passing data between activities
 
+Jetpack compose
+
 XML Layouts
 
 🔄 Project Flow
