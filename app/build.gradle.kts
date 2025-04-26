@@ -38,6 +38,9 @@ android {
     buildFeatures {
         compose = true
     }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.3" // use the correct version
+    }
 }
 
 dependencies {
@@ -77,5 +80,7 @@ dependencies {
     implementation("com.squareup.retrofit2:adapter-rxjava3:2.9.0")
 
     implementation ("com.facebook.shimmer:shimmer:0.5.0")
+
+    implementation("io.coil-kt:coil-compose:2.5.0")
 
 }

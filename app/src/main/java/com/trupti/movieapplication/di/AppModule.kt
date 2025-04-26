@@ -15,7 +15,7 @@ val networkModule = module {
         Retrofit.Builder()
             .baseUrl("https://api.watchmode.com/v1/")
             .addConverterFactory(GsonConverterFactory.create())
-            .addCallAdapterFactory(RxJava3CallAdapterFactory.create()) // <-- RxJava3 adapter
+            .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
             .build()
             .create(ApiService::class.java)
     }

@@ -59,7 +59,7 @@ fun Greeting(onButtonClick: () -> Unit) {
                 text = "Welcome to Movie App",
                 fontSize = 30.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.Yellow
+                color = Color.Cyan
 
             )
             Spacer(modifier = Modifier.padding(16.dp))

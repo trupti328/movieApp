@@ -1,5 +1,6 @@
 package com.trupti.movieapplication.uiview.home
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +10,7 @@ import com.trupti.movieapplication.R
 import com.trupti.movieapplication.model.Movie
 
 class MovieAdapter(
-    private val movies: List<Movie>,
+    private var movies: List<Movie>,
     private val onMovieClick: (Int) -> Unit
 ) : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
 
@@ -19,7 +20,9 @@ class MovieAdapter(
         fun bind(movie: Movie, onMovieClick: (Int) -> Unit) {
             movieTitleTextView.text = movie.title
             itemView.setOnClickListener {
-                onMovieClick(movie.id) // Pass movie ID to onMovieClick
+                onMovieClick(movie.id)
+
+                Log.d("MovieAdapter", "Clicked movie: ${movie}")
             }
         }
     }
@@ -32,8 +35,15 @@ class MovieAdapter(
 
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
         val movie = movies[position]
-        holder.bind(movie, onMovieClick) // Bind the movie and click listen
+        holder.bind(movie, onMovieClick)
     }
 
     override fun getItemCount(): Int = movies.size
+
+//    fun updateList(newList: List<Movie>) {
+//        movies = newList
+//        notifyDataSetChanged()
+//    }
 }
+
+
