@@ -42,10 +42,10 @@ But I didn’t know how to set it up correctly.
 I learned it from Youtube and applied it.
 
 
-🛠️ How I Solved It
-Made a MovieDetailViewModelFactory class.
+✅ How I Fixed Things
+Made sure to pass the correct movie id using Intent
 
-Used ViewModelProvider(this, factory) inside DetailsActivity to create the ViewModel.
+Created API service and other objects manually and passed them as needed.
 
 Now, the app correctly fetches and displays data without crashing.
 
